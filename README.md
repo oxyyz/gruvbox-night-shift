@@ -12,7 +12,7 @@ The `button_background` key does not draw a separate background behind every too
 
 ## New Tab image
 
-`assets/new-tab-background.png` is a 2560 × 1435 PNG made from the supplied 5824 × 3264 JPEG. Chrome themes require PNG image assets. The original file remains untouched. The image is centered and does not repeat; the `bg0` color fills any uncovered area. Current Chrome uses the image at its natural pixel size, so smaller windows crop the edges and larger or high-density displays may show background-colored margins. A Chrome theme cannot specify responsive `background-size: cover` without replacing the New Tab page, which this project intentionally does not do.
+`assets/new-tab-background.png` is a 2560 × 1440 PNG with a 256-color palette to keep the file small. Chrome themes require PNG image assets. The image is centered and does not repeat; the `bg0` color fills any uncovered area. Current Chrome uses the image at its natural pixel size, so smaller windows crop the edges and larger or high-density displays may show background-colored margins. A Chrome theme cannot specify responsive `background-size: cover` without replacing the New Tab page, which this project intentionally does not do.
 
 With a theme image present, current Chrome derives some New Tab foreground colors, including prominent text, from its own image-background styling rather than applying `ntp_text` everywhere. The manifest keeps the Gruvbox New Tab color keys for surfaces and elements where Chrome uses them.
 
