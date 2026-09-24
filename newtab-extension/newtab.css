@@ -1,0 +1,67 @@
+:root {
+  --bg0: #282828;
+  --fg1: #ebdbb2;
+  --fg3: #bdae93;
+  --yellow: #fabd2f;
+  --shadow: 0 1px 3px rgba(0, 0, 0, 0.85), 0 0 12px rgba(0, 0, 0, 0.6);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  position: relative;
+  overflow: hidden;
+  background: var(--bg0) url("assets/new-tab-background.png") center / cover no-repeat;
+  color: var(--fg1);
+  font-family: "JetBrains Mono", "Cascadia Code", Consolas, ui-monospace, monospace;
+  text-shadow: var(--shadow);
+}
+
+.clock {
+  position: absolute;
+  top: 40px;
+  right: 48px;
+  text-align: right;
+}
+
+#time {
+  display: block;
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0.02em;
+}
+
+#date {
+  margin-top: 10px;
+  font-size: 18px;
+  color: var(--fg3);
+}
+
+.links {
+  position: absolute;
+  bottom: 40px;
+  left: 48px;
+  display: flex;
+  gap: 32px;
+}
+
+.links a {
+  color: var(--fg1);
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.links a:hover,
+.links a:focus-visible {
+  color: var(--yellow);
+  outline: none;
+}

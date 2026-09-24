@@ -28,6 +28,12 @@ If you publish this theme, confirm that you have the rights to distribute the su
 
 The theme changes Chrome's browser UI, not website content. It does not replace the New Tab page or add an extension button.
 
+## Optional New Tab extension
+
+Chrome's own New Tab page always shows the Google logo, search box, and Gmail/Images links; a theme cannot hide them. The separate extension in [`newtab-extension/`](newtab-extension/) replaces the New Tab page with the same illustration (scaled to cover the window), a clock and date in the top-right corner, and GitHub and BuildLab links in the bottom-left corner. Edit the links in `newtab-extension/newtab.html`.
+
+Load it the same way as the theme: **Load unpacked** on `chrome://extensions`, selecting the `newtab-extension` folder. On the first New Tab, Chrome asks whether to keep the changed page; choose **Keep it**. Search from the address bar. The theme and the extension are independent and can be installed together.
+
 ## Package
 
 Create a ZIP whose **root contains `manifest.json`**, not an extra wrapping directory. For example, from this folder in PowerShell:
